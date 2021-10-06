@@ -1,0 +1,108 @@
+:root {
+  --white: hsla(0, 0%, 100%);
+  --grey: hsl(0, 0%, 75%);
+}
+
+body {
+  font-family: var(--text-font);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+@media screen and (min-width: 1160px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1110px;
+  }
+}
+
+:root {
+  --title-font: "Josefin Sans", sans-serif;
+  --text-font: "Alata", sans-serif;
+}
+
+.text-15 {
+  font-family: var(--text-font);
+  font-size: 0.9375rem;
+  line-height: 25px;
+}
+
+.title-40 {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  line-height: 38px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.title-32 {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  line-height: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.title-24 {
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 800px) {
+  .title--sm-72 {
+    font-family: var(--title-font);
+    font-size: 4.5rem;
+    line-height: 70px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .title--sm-48 {
+    font-family: var(--title-font);
+    font-size: 3rem;
+    line-height: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .title--sm-32 {
+    font-family: var(--title-font);
+    font-size: 2rem;
+    line-height: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+.section__text {
+  opacity: 0.5;
+}
+
+.btn-outline {
+  font-family: var(--text-font);
+  font-size: 0.875rem;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,47 @@
+@use "../util/" as *;
+
+:root {
+	--title-font: "Josefin Sans", sans-serif;
+	--text-font: "Alata", sans-serif;
+}
+
+.text {
+	&-15 {
+		@include textTemplate(rem(15), 25px);
+	}
+}
+
+.title {
+	&-40 {
+		@include titleTemplate(rem(32), 38px);
+	}
+	&-32 {
+		@include titleTemplate(rem(32), 32px);
+	}
+	&-24 {
+		@include titleTemplate(rem(24), 24px);
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.title {
+		&--sm-72 {
+			@include titleTemplate(rem(72), 70px);
+		}
+		&--sm-48 {
+			@include titleTemplate(rem(48));
+		}
+		&--sm-32 {
+			@include titleTemplate(rem(32), 32px);
+		}
+	}
+}
+
+.section__text {
+	opacity: 0.5;
+}
+
+.btn-outline {
+	@include textTemplate(rem(14), 14px);
+	text-transform: uppercase;
+}
