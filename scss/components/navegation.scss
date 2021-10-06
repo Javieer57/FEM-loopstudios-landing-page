@@ -1,6 +1,55 @@
-.nav__link {
-	// color: var(--white);
+.nav {
+	&__link {
+		display: inline-block;
+		padding: 10px 15px;
+		position: relative;
 
-	&:hover {
+		&::after {
+			animation: fadeOut 0.4s ease-in-out forwards;
+			background-color: var(--white);
+			bottom: 0;
+			content: "";
+			height: 2px;
+			left: 50%;
+			position: absolute;
+			transform: translateX(-50%);
+			transition: all 0.3s ease-in-out;
+			visibility: hidden;
+			width: 25px;
+		}
+
+		&:hover {
+			&::after {
+				animation: fadeIn 0.4s ease-in-out forwards;
+			}
+		}
+
+		@keyframes fadeOut {
+			0% {
+				opacity: 1;
+				visibility: visible;
+			}
+			99% {
+				visibility: visible;
+			}
+			100% {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+				visibility: hidden;
+			}
+			1% {
+				visibility: visible;
+			}
+			100% {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
 	}
 }
