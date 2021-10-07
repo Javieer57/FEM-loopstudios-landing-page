@@ -40,8 +40,3 @@
 .section__text {
 	opacity: 0.5;
 }
-
-.btn-outline {
-	@include textTemplate(rem(14), 14px);
-	text-transform: uppercase;
-}
