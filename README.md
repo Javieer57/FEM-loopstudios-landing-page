@@ -27,11 +27,12 @@ Users should be able to:
 
 ![](./thumb.png)
 
-<!-- ### Links
+### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
+<!--
+-   Solution URL: [Add solution URL here](https://your-solution-url.com) -->
 
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+-   Live Site URL: [Github Page](https://javieer57.github.io/FEM-loopstudios-landing-page/)
 
 ## My process
 
