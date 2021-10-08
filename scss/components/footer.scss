@@ -1,0 +1,73 @@
+@use "../util/" as *;
+
+.footer {
+	@extend %container;
+
+	// align-items: start;
+	display: grid;
+	grid-template-areas: "logo" "navegation" "social" "copyright";
+	grid-template-columns: 1fr;
+	justify-items: center;
+	padding-bottom: 55px;
+	padding-top: 55px;
+	text-align: center;
+
+	&__logo {
+		grid-area: logo;
+		display: inline-block;
+		margin-bottom: 30px;
+	}
+
+	&__nav {
+		grid-area: navegation;
+		margin-bottom: 50px;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	&__social {
+		grid-area: social;
+		margin-bottom: 15px;
+	}
+
+	&__copyright {
+		grid-area: copyright;
+	}
+
+	&__icon {
+		@extend %link-hover-animation;
+		padding: 10px;
+		vertical-align: middle;
+	}
+
+	@include breakpoint(medium) {
+		align-items: center;
+		justify-content: space-between;
+		grid-template-columns: repeat(2, auto);
+		grid-template-areas: "logo social" "navegation copyright";
+		padding-bottom: 40px;
+		padding-top: 40px;
+		row-gap: 15px;
+
+		> * {
+			margin-bottom: 0;
+		}
+
+		&__logo {
+			justify-self: left;
+			padding-left: 15px;
+		}
+
+		&__social {
+			justify-self: right;
+		}
+
+		&__nav {
+			display: block;
+		}
+
+		&__copyright {
+			padding-right: 10px;
+		}
+	}
+}

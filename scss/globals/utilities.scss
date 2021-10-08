@@ -5,3 +5,8 @@
 .text-white {
 	color: var(--white);
 }
+
+.bg-dark {
+	@extend .text-white;
+	background-color: #000;
+}

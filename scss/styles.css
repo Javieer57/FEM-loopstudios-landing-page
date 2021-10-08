@@ -31,21 +31,73 @@ img {
   opacity: 0.5;
 }
 
-.text-white {
+.text-white, .bg-dark {
   color: var(--white);
 }
 
-.container {
+.bg-dark {
+  background-color: #000;
+}
+
+.footer, .container {
   padding-left: 25px;
   padding-right: 25px;
 }
 @media screen and (min-width: 1160px) {
-  .container {
+  .footer, .container {
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
     padding-right: 0;
     max-width: 1110px;
+  }
+}
+
+.footer__icon {
+  display: inline-block;
+  padding: 10px 15px;
+  position: relative;
+}
+.footer__icon::after {
+  animation: fadeOut 0.4s ease-in-out forwards;
+  background-color: var(--white);
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  width: 25px;
+}
+.footer__icon:hover::after {
+  animation: fadeIn 0.4s ease-in-out forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -109,12 +161,12 @@ img {
   opacity: 0.5;
 }
 
-.nav__link {
+.link__nav {
   display: inline-block;
   padding: 10px 15px;
   position: relative;
 }
-.nav__link::after {
+.link__nav::after {
   animation: fadeOut 0.4s ease-in-out forwards;
   background-color: var(--white);
   bottom: 0;
@@ -127,7 +179,7 @@ img {
   visibility: hidden;
   width: 25px;
 }
-.nav__link:hover::after {
+.link__nav:hover::after {
   animation: fadeIn 0.4s ease-in-out forwards;
 }
 @keyframes fadeOut {
@@ -292,30 +344,6 @@ img {
   background-image: url(/images/desktop/image-fisheye.jpg);
 }
 
-.footer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "links social";
-  align-items: center;
-  padding: 40px 0;
-}
-.footer__links {
-  grid-area: links;
-  justify-self: start;
-}
-.footer__links img {
-  padding-left: 15px;
-  margin-bottom: 25px;
-}
-.footer__social {
-  grid-area: social;
-  justify-self: end;
-  text-align: right;
-}
-.footer__socials {
-  margin-bottom: 24px;
-}
-
 .btn-outline {
   font-family: var(--text-font);
   font-size: 0.875rem;
@@ -336,6 +364,65 @@ img {
 .btn-outline:hover {
   background-color: #000;
   color: var(--white);
+}
+
+.footer {
+  display: grid;
+  grid-template-areas: "logo" "navegation" "social" "copyright";
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding-bottom: 55px;
+  padding-top: 55px;
+  text-align: center;
+}
+.footer__logo {
+  grid-area: logo;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.footer__nav {
+  grid-area: navegation;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.footer__social {
+  grid-area: social;
+  margin-bottom: 15px;
+}
+.footer__copyright {
+  grid-area: copyright;
+}
+.footer__icon {
+  padding: 10px;
+  vertical-align: middle;
+}
+@media (min-width: 48.75em) {
+  .footer {
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "logo social" "navegation copyright";
+    padding-bottom: 40px;
+    padding-top: 40px;
+    row-gap: 15px;
+  }
+  .footer > * {
+    margin-bottom: 0;
+  }
+  .footer__logo {
+    justify-self: left;
+    padding-left: 15px;
+  }
+  .footer__social {
+    justify-self: right;
+  }
+  .footer__nav {
+    display: block;
+  }
+  .footer__copyright {
+    padding-right: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

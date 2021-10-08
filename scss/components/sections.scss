@@ -1,3 +1,5 @@
+@use "../util/" as *;
+
 .about {
 	display: grid;
 	grid-template-columns: minmax(auto, 570px) minmax(auto, 160px) minmax(auto, 360px);
@@ -101,38 +103,4 @@
 }
 #fisheye {
 	background-image: url(/images/desktop/image-fisheye.jpg);
-}
-
-.footer {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-areas: "links social";
-	align-items: center;
-	padding: 40px 0;
-
-	&__links {
-		grid-area: links;
-		justify-self: start;
-
-		img {
-			padding-left: 15px;
-			margin-bottom: 25px;
-		}
-	}
-
-	&__social {
-		grid-area: social;
-		justify-self: end;
-		text-align: right;
-	}
-
-	&__socials {
-		margin-bottom: 24px;
-	}
-
-	// &__icon {
-	// 	display: inline-block;
-	// 	width: 24px;
-	// 	height: 24px;
-	// }
 }
