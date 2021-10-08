@@ -20,7 +20,7 @@ a {
 
 img {
   vertical-align: top;
-  width: 100%;
+  max-width: 100%;
 }
 
 .mb-25 {
@@ -290,6 +290,30 @@ img {
 
 #fisheye {
   background-image: url(/images/desktop/image-fisheye.jpg);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "links social";
+  align-items: center;
+  padding: 40px 0;
+}
+.footer__links {
+  grid-area: links;
+  justify-self: start;
+}
+.footer__links img {
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+.footer__social {
+  grid-area: social;
+  justify-self: end;
+  text-align: right;
+}
+.footer__socials {
+  margin-bottom: 24px;
 }
 
 .btn-outline {
