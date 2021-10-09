@@ -11,6 +11,16 @@
 	}
 }
 
+%pseudoelement {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.15s ease-in-out;
+}
+
 %link-hover-animation {
 	display: inline-block;
 	padding: 10px 15px;

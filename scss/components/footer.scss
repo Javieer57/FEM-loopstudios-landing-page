@@ -3,7 +3,6 @@
 .footer {
 	@extend %container;
 
-	// align-items: start;
 	display: grid;
 	grid-template-areas: "logo" "navegation" "social" "copyright";
 	grid-template-columns: 1fr;

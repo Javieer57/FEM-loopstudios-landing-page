@@ -21,10 +21,8 @@
 	&-24 {
 		@include titleTemplate(rem(24), 24px);
 	}
-}
 
-@media screen and (min-width: 800px) {
-	.title {
+	@include breakpoint(small) {
 		&--sm-72 {
 			@include titleTemplate(rem(72), 70px);
 		}
