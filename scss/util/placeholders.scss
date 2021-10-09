@@ -12,6 +12,16 @@
 	}
 }
 
+%button-default {
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 8px;
+}
+
 %pseudoelement {
 	position: absolute;
 	content: "";

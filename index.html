@@ -38,21 +38,47 @@
 		</style>
 	</head>
 	<body>
-		<header class="hero text-white">
-			<div class="container hero__top">
-				<a href="javascript:;" aria-label="loopstudios home page">
+		<header class="header text-white">
+			<div class="navegation">
+				<a class="navegation__logo" href="javascript:;" aria-label="loopstudios home page">
 					<img src="./images/logo.svg" alt="Loopstudios logo" aria-hidden="true" />
 				</a>
-				<nav class="nav">
+
+				<button class="navegation__btn" onclick="openNav()">
+					<img src="./images/icon-hamburger.svg" alt="" />
+				</button>
+
+				<nav class="navegation__links">
 					<a class="link__nav text-15" href="javascript:;">About</a>
 					<a class="link__nav text-15" href="javascript:;">Careers</a>
 					<a class="link__nav text-15" href="javascript:;">Events</a>
 					<a class="link__nav text-15" href="javascript:;">Products</a>
 					<a class="link__nav text-15" href="javascript:;">Support</a>
 				</nav>
+
+				<div id="myNav" class="overlay">
+					<div class="overlay__top">
+						<a class="navegation__logo" href="javascript:;" aria-label="loopstudios home page">
+							<img src="./images/logo.svg" alt="Loopstudios logo" aria-hidden="true" />
+						</a>
+
+						<button class="navegation__btn" onclick="closeNav()">
+							<img src="./images/icon-close.svg" alt="" />
+						</button>
+					</div>
+
+					<nav class="overlay__content">
+						<a class="title-24" href="javascript:;">About</a>
+						<a class="title-24" href="javascript:;">Careers</a>
+						<a class="title-24" href="javascript:;">Events</a>
+						<a class="title-24" href="javascript:;">Products</a>
+						<a class="title-24" href="javascript:;">Support</a>
+					</nav>
+				</div>
 			</div>
-			<div class="container hero__bottom">
-				<h1 class="hero__title title-40 title--sm-72">Immersive experiences that deliver</h1>
+
+			<div class="container header__bottom">
+				<h1 class="hero__title title-40 title--sm-48 title--lg-72">Immersive experiences that deliver</h1>
 			</div>
 		</header>
 
@@ -175,8 +201,14 @@
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
 		</div> -->
 
-		<script src="js/jquery-1.12.3.min.js"></script>
-		<script src="js/parallax.js"></script>
-		<script src="js/efectos.js"></script>
+		<script>
+			function openNav() {
+				document.getElementById("myNav").style.height = "100%";
+			}
+
+			function closeNav() {
+				document.getElementById("myNav").style.height = "0%";
+			}
+		</script>
 	</body>
 </html>

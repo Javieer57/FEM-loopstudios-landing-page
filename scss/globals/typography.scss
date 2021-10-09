@@ -13,7 +13,7 @@
 
 .title {
 	&-40 {
-		@include titleTemplate(rem(32), 38px);
+		@include titleTemplate(rem(40), 38px);
 	}
 	&-32 {
 		@include titleTemplate(rem(32), 32px);
@@ -35,6 +35,9 @@
 	}
 
 	@include breakpoint(large) {
+		&--lg-72 {
+			@include titleTemplate(rem(72), 70px);
+		}
 		&--lg-48 {
 			@include titleTemplate(rem(48));
 		}
