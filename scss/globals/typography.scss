@@ -33,6 +33,12 @@
 			@include titleTemplate(rem(32), 32px);
 		}
 	}
+
+	@include breakpoint(large) {
+		&--lg-48 {
+			@include titleTemplate(rem(48));
+		}
+	}
 }
 
 .section__text {
