@@ -5,7 +5,7 @@
 
 	&::before {
 		z-index: -1;
-		background-image: url(/images/mobile/image-hero.jpg);
+		background-image: url(./../images/mobile/image-hero.jpg);
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -18,7 +18,7 @@
 		height: 100%;
 
 		@include breakpoint(medium) {
-			background-image: url(/images/desktop/image-hero.jpg);
+			background-image: url(./../images/desktop/image-hero.jpg);
 		}
 	}
 
