@@ -281,6 +281,10 @@ img {
   border: 2px solid white;
 }
 @media (min-width: 59.375em) {
+  .header__bottom {
+    padding-top: 120px;
+    padding-bottom: 145px;
+  }
   .header__bottom .hero__title {
     max-width: 650px;
     padding: 40px;
