@@ -88,8 +88,8 @@ To add the filter on hover in the projects first I tried to add the `filter` pro
 
 -   Frontend Mentor - [@Javieer57](https://www.frontendmentor.io/profile/Javieer57)
 -   Github - [@Javieer57](https://github.com/Javieer57)
--   Codepen - [@Javieer57](https://codepen.io/Javieer57)
--   Instagram - [@javieer_eufracio](https://www.instagram.com/javieer_eufracio/)
+-   Codepen - [@Javieer57](https://codepen.io/e_javieer)
+-   Portfolio - https://javieereufracio.com
 
 ## Acknowledgments
 
